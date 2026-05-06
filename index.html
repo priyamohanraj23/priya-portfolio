@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Priya Mohanraj | Portfolio</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #000;
+  color: white;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 60px;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
+
+nav h2 {
+  color: #00eaff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #00eaff;
+}
+
+section {
+  min-height: 100vh;
+  padding: 100px 10%;
+  display: flex;
+  align-items: center;
+}
+
+#home {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8));
+}
+
+.home-content h1 {
+  font-size: 60px;
+  color: #00eaff;
+}
+
+.home-content p {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 30px;
+  background: #00eaff;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 0 20px #00eaff;
+}
+
+#about {
+  background: #0b0f1a;
+}
+
+#projects {
+  background: #05080f;
+  flex-direction: column;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.project-card {
+  background: #0e1628;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  transition: 0.4s;
+  box-shadow: 0 0 15px rgba(0,234,255,0.2);
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px #00eaff;
+}
+
+#skills {
+  background: #0b0f1a;
+  flex-direction: column;
+}
+
+#contact {
+  background: #0b0f1a;
+}
+
+a {
+  color: #00eaff;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <h2>PRIYA</h2>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section id="home">
+  <div class="home-content">
+    <h1>Priya Mohanraj</h1>
+    <p>Data Analyst | Python | SQL | Power BI</p>
+    <a href="Priya_Resume.pdf" class="btn" download>Download Resume</a>
+  </div>
+</section>
+
+<section id="about">
+  <div>
+    <h2 style="color:#00eaff;">About Me</h2>
+    <p>
+      M.Sc. Data Science graduate with strong skills in Python, SQL, and Power BI.
+      I specialize in data analysis, machine learning, and building dashboards that
+      generate actionable insights. Passionate about solving real-world problems using data.
+    </p>
+  </div>
+</section>
+
+<section id="projects">
+  <h2 style="color:#00eaff;">Projects</h2>
+
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <h3>Hospital Readmission Prediction</h3>
+      <p>
+        Built machine learning models (Logistic Regression, Random Forest) to predict hospital readmissions.
+        Performed data preprocessing, feature selection, and evaluation to improve prediction accuracy.
+      </p>
+      <a href="https://github.com/priyamohanraj23" target="_blank">View Code</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Customer Churn Prediction</h3>
+      <p>
+        Developed classification models to identify customers likely to churn.
+        Conducted EDA and identified key factors influencing customer retention.
+      </p>
+      <a href="https://github.com/priyamohanraj23" target="_blank">View Code</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Superstore Sales Dashboard</h3>
+      <p>
+        Created an interactive Power BI dashboard to analyze sales performance and regional trends.
+        Delivered insights to support business decision-making.
+      </p>
+      <a href="https://github.com/priyamohanraj23" target="_blank">View Project</a>
+    </div>
+
+  </div>
+</section>
+
+<section id="skills">
+  <h2 style="color:#00eaff;">Skills</h2>
+  <p>
+    Python | SQL | Power BI | Machine Learning | Pandas | NumPy | scikit-learn | Data Visualization
+  </p>
+</section>
+
+<section id="contact">
+  <div>
+    <h2 style="color:#00eaff;">Contact</h2>
+    <p>Email: <a href="mailto:priyamohanraj230403@gmail.com">priyamohanraj230403@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/priyamohanraj23" target="_blank">github.com/priyamohanraj23</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/priyamohanraj23/" target="_blank">linkedin.com/in/priyamohanraj23</a></p>
+  </div>
+</section>
+
+</body>
+</html>
