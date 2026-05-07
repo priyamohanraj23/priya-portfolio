@@ -175,6 +175,25 @@ section {
   font-weight: bold;
 }
 
+/* PROJECT IMAGES */
+.project-images {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.project-images img {
+  width: 50%;
+  border-radius: 14px;
+  object-fit: cover;
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: 0.3s;
+}
+
+.project-images img:hover {
+  transform: scale(1.03);
+}
+
 /* SKILLS */
 #skills {
   background: linear-gradient(135deg, #111827, #0f172a);
@@ -248,6 +267,14 @@ a {
     padding: 100px 7%;
   }
 
+  .project-images {
+    flex-direction: column;
+  }
+
+  .project-images img {
+    width: 100%;
+  }
+
 }
 </style>
 </head>
@@ -270,6 +297,7 @@ a {
 <!-- HOME -->
 <section id="home">
   <div class="home-content">
+
     <h1>Priya Mohanraj</h1>
 
     <p>
@@ -280,12 +308,14 @@ a {
     <a href="Priya_Resume.pdf" class="btn" download>
       Download Resume
     </a>
+
   </div>
 </section>
 
 <!-- ABOUT -->
 <section id="about">
   <div>
+
     <h2 style="color:#00eaff;">About Me</h2>
 
     <p>
@@ -294,6 +324,7 @@ a {
       Skilled in Python, SQL, Power BI, React Native, and Dialogflow ES,
       with experience building data-driven and user-focused solutions.
     </p>
+
   </div>
 </section>
 
@@ -304,25 +335,15 @@ a {
 
   <div class="projects-grid">
 
+    <!-- NOGO PROJECT -->
     <div class="project-card">
+
       <h3>NOGO Home Services Platform</h3>
 
-      <img src="nogo1.png" alt="NOGO App"
-style="width:100%; border-radius:12px; margin-bottom:15px;">
-
-<img src="nogo2.png" alt="NOGO App"
-style="width:100%; border-radius:12px; margin-bottom:15px;">
-
-      <img src="nogo3.png" alt="NOGO App" 
-style="width:100%; border-radius:12px; margin-bottom:15px;">
-
-<img src="nogo4.png" alt="NOGO App" 
-style="width:100%; border-radius:12px; margin-bottom:15px;">
-<img src="nogo5.png" alt="NOGO App" 
-style="width:100%; border-radius:12px; margin-bottom:15px;">
-
-
-
+      <div class="project-images">
+        <img src="nogo1.png" alt="NOGO App Screenshot">
+        <img src="nogo2.png" alt="NOGO App Screenshot">
+      </div>
 
       <p>
         Developed a cross-platform React Native mobile application for an AI-powered
@@ -334,9 +355,12 @@ style="width:100%; border-radius:12px; margin-bottom:15px;">
       <a href="https://github.com/priyamohanraj23/nogo-home-services-platform" target="_blank">
         View Project
       </a>
+
     </div>
 
+    <!-- HOSPITAL PROJECT -->
     <div class="project-card">
+
       <h3>Hospital Readmission Prediction</h3>
 
       <p>
@@ -348,9 +372,12 @@ style="width:100%; border-radius:12px; margin-bottom:15px;">
       <a href="https://github.com/priyamohanraj23/hospital_readmission_ML" target="_blank">
         View Code
       </a>
+
     </div>
 
+    <!-- CHURN PROJECT -->
     <div class="project-card">
+
       <h3>Customer Churn Prediction</h3>
 
       <p>
@@ -362,9 +389,12 @@ style="width:100%; border-radius:12px; margin-bottom:15px;">
       <a href="https://github.com/priyamohanraj23" target="_blank">
         View Code
       </a>
+
     </div>
 
+    <!-- POWER BI PROJECT -->
     <div class="project-card">
+
       <h3>Superstore Sales Dashboard</h3>
 
       <p>
@@ -376,6 +406,7 @@ style="width:100%; border-radius:12px; margin-bottom:15px;">
       <a href="https://github.com/priyamohanraj23" target="_blank">
         View Project
       </a>
+
     </div>
 
   </div>
@@ -397,6 +428,7 @@ style="width:100%; border-radius:12px; margin-bottom:15px;">
 <section id="contact">
 
   <div>
+
     <h2 style="color:#00eaff;">Contact</h2>
 
     <p>
@@ -419,6 +451,7 @@ style="width:100%; border-radius:12px; margin-bottom:15px;">
         linkedin.com/in/priyamohanraj23
       </a>
     </p>
+
   </div>
 
 </section>
