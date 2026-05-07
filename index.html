@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Priya Mohanraj |  Portfolio</title>
+<title>Priya Mohanraj | Portfolio</title>
 
 <style>
 * {
@@ -15,25 +15,28 @@
 }
 
 body {
-  background: #000;
+  background: linear-gradient(135deg, #050816, #0b1120, #111827);
   color: white;
 }
 
+/* NAVBAR */
 nav {
   position: fixed;
   top: 0;
   width: 100%;
   padding: 15px 60px;
-  background: rgba(0,0,0,0.7);
+  background: rgba(10, 15, 25, 0.75);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 1000;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(12px);
 }
 
 nav h2 {
   color: #00eaff;
+  letter-spacing: 1px;
 }
 
 nav ul {
@@ -46,12 +49,14 @@ nav ul li a {
   color: white;
   text-decoration: none;
   transition: 0.3s;
+  font-weight: 500;
 }
 
 nav ul li a:hover {
   color: #00eaff;
 }
 
+/* SECTION */
 section {
   min-height: 100vh;
   padding: 100px 10%;
@@ -59,81 +64,200 @@ section {
   align-items: center;
 }
 
+/* HOME */
 #home {
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8));
+  background:
+    radial-gradient(circle at top left, rgba(0,234,255,0.15), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(0,234,255,0.08), transparent 25%),
+    linear-gradient(135deg, #050816, #0b1120, #111827);
+}
+
+.home-content {
+  max-width: 700px;
 }
 
 .home-content h1 {
-  font-size: 60px;
+  font-size: 65px;
   color: #00eaff;
+  margin-bottom: 15px;
 }
 
 .home-content p {
-  font-size: 20px;
-  margin: 20px 0;
+  font-size: 22px;
+  margin-bottom: 30px;
+  color: #d1d5db;
+  line-height: 1.6;
 }
 
+/* BUTTON */
 .btn {
   display: inline-block;
-  padding: 12px 30px;
-  border-radius: 30px;
-  background: #00eaff;
+  padding: 14px 32px;
+  border-radius: 40px;
+  background: linear-gradient(135deg, #00eaff, #00bcd4);
   color: black;
   font-weight: bold;
   text-decoration: none;
-  box-shadow: 0 0 20px #00eaff;
+  box-shadow: 0 0 25px rgba(0,234,255,0.35);
+  transition: 0.3s;
 }
 
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 45px rgba(0,234,255,0.6);
+}
+
+/* ABOUT */
 #about {
-  background: #0b0f1a;
+  background: linear-gradient(135deg, #0b1120, #111827);
 }
 
+#about h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+#about p {
+  max-width: 850px;
+  font-size: 19px;
+  line-height: 1.8;
+  color: #d1d5db;
+}
+
+/* PROJECTS */
 #projects {
-  background: #05080f;
+  background: linear-gradient(135deg, #050816, #0f172a);
   flex-direction: column;
+}
+
+#projects h2 {
+  font-size: 42px;
 }
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  margin-top: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 35px;
+  margin-top: 50px;
   width: 100%;
 }
 
 .project-card {
-  background: #0e1628;
-  padding: 25px;
-  border-radius: 15px;
+  background: rgba(17, 25, 40, 0.75);
+  padding: 28px;
+  border-radius: 20px;
   text-align: center;
   transition: 0.4s;
-  box-shadow: 0 0 15px rgba(0,234,255,0.2);
+  box-shadow: 0 8px 32px rgba(0, 234, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.08);
 }
 
 .project-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 0 30px #00eaff;
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 0 40px rgba(0,234,255,0.45);
 }
 
+.project-card h3 {
+  color: #00eaff;
+  margin-bottom: 18px;
+  font-size: 24px;
+}
+
+.project-card p {
+  color: #d1d5db;
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+.project-card a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* SKILLS */
 #skills {
-  background: #0b0f1a;
+  background: linear-gradient(135deg, #111827, #0f172a);
   flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
+#skills h2 {
+  font-size: 42px;
+  margin-bottom: 25px;
+}
+
+#skills p {
+  font-size: 22px;
+  color: #d1d5db;
+  max-width: 900px;
+  line-height: 1.8;
+}
+
+/* CONTACT */
 #contact {
-  background: #0b0f1a;
+  background: linear-gradient(135deg, #0b1120, #111827);
 }
 
+#contact h2 {
+  font-size: 42px;
+  margin-bottom: 25px;
+}
+
+#contact p {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #d1d5db;
+}
+
+#contact a {
+  color: #00eaff;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* GLOBAL LINKS */
 a {
   color: #00eaff;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+
+  nav {
+    padding: 15px 20px;
+  }
+
+  nav ul {
+    gap: 15px;
+  }
+
+  .home-content h1 {
+    font-size: 48px;
+  }
+
+  .home-content p {
+    font-size: 18px;
+  }
+
+  section {
+    padding: 100px 7%;
+  }
+
 }
 </style>
 </head>
 
 <body>
 
+<!-- NAVBAR -->
 <nav>
-  <h2>PRIYA</h2>
+  <h2>PRIYA M</h2>
+
   <ul>
     <li><a href="#home">Home</a></li>
     <li><a href="#about">About</a></li>
@@ -143,86 +267,143 @@ a {
   </ul>
 </nav>
 
+<!-- HOME -->
 <section id="home">
   <div class="home-content">
     <h1>Priya Mohanraj</h1>
-    <p>Data Analyst | Python | SQL | Power BI</p>
-    <a href="Priya_Resume.pdf" class="btn" download>Download Resume</a>
+
+    <p>
+      Data Science Graduate specializing in Machine Learning,
+      Data Analytics, AI-powered applications, and dashboard development.
+    </p>
+
+    <a href="Priya_Resume.pdf" class="btn" download>
+      Download Resume
+    </a>
   </div>
 </section>
 
+<!-- ABOUT -->
 <section id="about">
   <div>
     <h2 style="color:#00eaff;">About Me</h2>
+
     <p>
-M.Sc. Data Science graduate with hands-on experience in machine learning,
-data analytics, dashboard development, and AI-powered applications.
-Skilled in Python, SQL, Power BI, React Native, and Dialogflow ES,
-with experience building data-driven and user-focused solutions.
-</p>
+      M.Sc. Data Science graduate with hands-on experience in machine learning,
+      data analytics, dashboard development, and AI-powered applications.
+      Skilled in Python, SQL, Power BI, React Native, and Dialogflow ES,
+      with experience building data-driven and user-focused solutions.
+    </p>
   </div>
 </section>
 
+<!-- PROJECTS -->
 <section id="projects">
+
   <h2 style="color:#00eaff;">Projects</h2>
 
   <div class="projects-grid">
 
     <div class="project-card">
       <h3>NOGO Home Services Platform</h3>
+
       <p>
-        Developed a cross-platform React Native mobile application for an AI-powered home services platform.
-        Contributed to Dialogflow ES chatbot development by designing intents, entities, and training phrases
-        for realistic service interactions. Integrated backend APIs and chatbot support to ensure seamless
-        user experience across devices.
+        Developed a cross-platform React Native mobile application for an AI-powered
+        home services platform. Contributed to Dialogflow ES chatbot development
+        by designing intents, entities, and training phrases for realistic service interactions.
+        Integrated backend APIs and chatbot support to ensure seamless user experience.
       </p>
-      <a href="https://github.com/priyamohanraj23/nogo-home-services-platform" target="_blank">View Project</a>
+
+      <a href="https://github.com/priyamohanraj23/nogo-home-services-platform" target="_blank">
+        View Project
+      </a>
     </div>
 
     <div class="project-card">
       <h3>Hospital Readmission Prediction</h3>
+
       <p>
-        Built machine learning models using Logistic Regression and Random Forest to predict hospital readmissions.
-        Performed preprocessing, feature engineering, and evaluation to identify important healthcare risk factors.
+        Built machine learning models using Logistic Regression and Random Forest
+        to predict hospital readmissions. Performed preprocessing, feature engineering,
+        and evaluation to identify important healthcare risk factors.
       </p>
-      <a href="https://github.com/priyamohanraj23/hospital_readmission_ML" target="_blank">View Code</a>
+
+      <a href="https://github.com/priyamohanraj23/hospital_readmission_ML" target="_blank">
+        View Code
+      </a>
     </div>
 
     <div class="project-card">
       <h3>Customer Churn Prediction</h3>
+
       <p>
-        Developed classification models to identify customers likely to churn using machine learning techniques.
-        Conducted exploratory data analysis and identified key customer retention factors.
+        Developed classification models to identify customers likely to churn using
+        machine learning techniques. Conducted exploratory data analysis and identified
+        key customer retention factors.
       </p>
-      <a href="https://github.com/priyamohanraj23" target="_blank">View Code</a>
+
+      <a href="https://github.com/priyamohanraj23" target="_blank">
+        View Code
+      </a>
     </div>
 
     <div class="project-card">
       <h3>Superstore Sales Dashboard</h3>
+
       <p>
-        Created an interactive Power BI dashboard to analyze sales trends, regional performance, and KPIs.
-        Delivered business insights through dynamic visualizations and reports.
+        Created an interactive Power BI dashboard to analyze sales trends,
+        regional performance, and KPIs. Delivered business insights through
+        dynamic visualizations and reports.
       </p>
-      <a href="https://github.com/priyamohanraj23" target="_blank">View Project</a>
+
+      <a href="https://github.com/priyamohanraj23" target="_blank">
+        View Project
+      </a>
     </div>
 
   </div>
 </section>
 
+<!-- SKILLS -->
 <section id="skills">
+
   <h2 style="color:#00eaff;">Skills</h2>
+
   <p>
-    Python | SQL | Power BI | Machine Learning | Pandas | NumPy | scikit-learn | Data Visualization
+    Python • SQL • Power BI • Machine Learning • Pandas • NumPy •
+    scikit-learn • React Native • Dialogflow ES • Data Visualization
   </p>
+
 </section>
 
+<!-- CONTACT -->
 <section id="contact">
+
   <div>
     <h2 style="color:#00eaff;">Contact</h2>
-    <p>Email: <a href="mailto:priyamohanraj230403@gmail.com">priyamohanraj230403@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/priyamohanraj23" target="_blank">github.com/priyamohanraj23</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/priyamohanraj23/" target="_blank">linkedin.com/in/priyamohanraj23</a></p>
+
+    <p>
+      Email:
+      <a href="mailto:priyamohanraj230403@gmail.com">
+        priyamohanraj230403@gmail.com
+      </a>
+    </p>
+
+    <p>
+      GitHub:
+      <a href="https://github.com/priyamohanraj23" target="_blank">
+        github.com/priyamohanraj23
+      </a>
+    </p>
+
+    <p>
+      LinkedIn:
+      <a href="https://www.linkedin.com/in/priyamohanraj23/" target="_blank">
+        linkedin.com/in/priyamohanraj23
+      </a>
+    </p>
   </div>
+
 </section>
 
 </body>
